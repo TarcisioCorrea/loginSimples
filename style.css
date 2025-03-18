@@ -3,78 +3,76 @@
 }
 
 :root{
-    --cor1: #af3d9c;
-    --cor2: #8B63C0;
-    --cor3: #281F33;
-    --cor4: #9553EA;
+    --cor0: #99FAD8;
+    --cor1: #46FA7E;
 }
 
 body{
-    background-color: var(--cor3);
+    background-color: var(--cor1);
 }
 
 main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 200px;
-}
-
-.login{
+    background-color: var(--cor0);
     width: 500px;
-    height: 500px;
-    background-color: var(--cor1);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.63);
+    height: 400px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.479);
 }
 
-div h1{
-    color: white;
-    padding: 40px;
+main h1{
+    padding: 20px 50px;
     font-size: 2.5em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
 }
 
-div label{
-    font-size: 1.3em;
-    padding: 50px;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.507);
+main p{
+    font-size: 1.2em;
 }
 
-div input{
+label{
+    margin-left: 80px;
+}
+
+input#name{
     display: block;
     margin: auto;
-    background-color: white;
     width: 300px;
-    height: 20px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.548);
 }
 
-div button{
+input#password{
     display: block;
     margin: auto;
-    padding: 8px;
-    width: 120px;
-    font-size: 1em;
+    width: 300px;
+}
+
+input#blogin{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    font-size: 0.8em;
     cursor: pointer;
-    box-shadow: 1px 1px 3px black;
 }
 
-div button:hover{
-    background-color: var(--cor3);
+#blogin:hover{
+    background-color: var(--cor1);
     color: white;
 }
 
-p{
+p.forgot{
+    font-size: 1em;
     text-align: center;
-    padding: 10px;
 }
 
-p > a{
+
+a{
+    color: black;
     text-decoration: none;
-    color: white;
 }
 
-p > a:hover{
+a:hover{
     text-decoration: underline;
 }
