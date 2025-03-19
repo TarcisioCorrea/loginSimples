@@ -1,78 +1,73 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root{
-    --cor0: #99FAD8;
-    --cor1: #46FA7E;
+    --cor1:#00E069;
+    --cor2:#CFE04D;
+    --cor3:#00A3E0;
 }
 
 body{
-    background-color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
 }
 
 main{
-    background-color: var(--cor0);
+    color: white;
+    background-color: rgb(12, 12, 12);
     width: 500px;
-    height: 400px;
-    border-radius: 5px;
+    height: 500px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
+    position: relative;
+}
+
+div{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.479);
 }
 
-main h1{
-    padding: 20px 50px;
+div h1{
     font-size: 2.5em;
 }
 
-main p{
-    font-size: 1.2em;
-}
-
-label{
-    margin-left: 80px;
-}
-
-input#name{
-    display: block;
-    margin: auto;
+input{
+    height: 50px;
     width: 300px;
+    margin: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
 }
 
-input#password{
-    display: block;
-    margin: auto;
-    width: 300px;
-}
-
-input#blogin{
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: 30px;
-    font-size: 0.8em;
-    cursor: pointer;
-}
-
-#blogin:hover{
-    background-color: var(--cor1);
+input.submit{
+    background-color: var(--cor3);
     color: white;
-}
-
-p.forgot{
     font-size: 1em;
-    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 303px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
 }
 
+input.submit:hover{
+    background-color: #004b66;
+}
 
-a{
-    color: black;
+div p{
+    text-align: center;
+    font-size: 1em;
+}
+
+div p > a{
+    color: white;
     text-decoration: none;
 }
 
-a:hover{
+div p > a:hover{
     text-decoration: underline;
 }
